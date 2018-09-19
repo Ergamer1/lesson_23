@@ -1,0 +1,70 @@
+/*
+Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 1 tab.
+        on line 38 of sass/_general.sass
+        from line 4 of sass/style.sass
+
+33: @for $i from 1 through 12
+34: 	.col-#{$i}
+35: 	width: $i*100%/12
+36: 	
+37: @for $i from 1 through 12
+38:  +phone
+39: 		.col-phone-#{$i}
+40: 		width: $i*100%/12
+41: @for $i from 1 through 12
+42: 	+tablet
+43: 		.col-tablet-#{$i}
+
+Backtrace:
+sass/_general.sass:38
+sass/style.sass:4
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:494:in `block in tabulate'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:452:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:452:in `each_with_index'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:452:in `tabulate'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:417:in `_to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:321:in `to_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:327:in `block in visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `block in with_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:88:in `with_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `block in with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:135:in `with_frame'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/stack.rb:79:in `with_base'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:162:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `map'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/base.rb:36:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:161:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/visitors/perform.rb:10:in `visit'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:36:in `css_tree'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/tree/root_node.rb:20:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/engine.rb:290:in `render'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:464:in `update_stylesheet'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `each'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-3.5.1/lib/sass/plugin/compiler.rb:320:in `block in watch'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 1 space was used for indentation, but the rest of the document was indented using 1 tab.\A         on line 38 of sass/_general.sass\A         from line 4 of sass/style.sass\A \A 33: @for $i from 1 through 12\A 34: 	.col-#{$i}\A 35: 	width: $i*100%/12\A 36: 	\A 37: @for $i from 1 through 12\A 38:  +phone\A 39: 		.col-phone-#{$i}\A 40: 		width: $i*100%/12\A 41: @for $i from 1 through 12\A 42: 	+tablet\A 43: 		.col-tablet-#{$i}"; }
